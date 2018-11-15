@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package theshinningloops;
+
+import java.util.Scanner; 
+/**
+ *
+ * @author ryanbailey
+ */
+public class TheShinningLoops {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Jack's Novel
+        int loopControl; 
+        
+        Scanner userScanner = new Scanner(System.in); 
+        
+        System.out.println("How Crazy Has Jack Gone on scale 1 to 10?");
+        
+        loopControl = userScanner.nextInt(); 
+        
+        for(int numLoops = 0; numLoops <= loopControl; numLoops = numLoops +1){
+            System.out.println("A11 Work and No Play Makes Jack a Dull Boy");
+            
+        }//close loop
+        
+        System.out.println("The Moon Landing Was Faked!");
+        
+    }//close method
+}//close class
