@@ -1,0 +1,57 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mathproblem;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ryanbailey
+ */
+public class MathProblem {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        final int CORRECT_ANSWER = 3 * (7 - 4) + 5;
+        int userInput;
+        int attempts = 1;
+        Scanner UserInputScanner = new Scanner(System.in);
+
+        while (attempts < 3) {
+            System.out.println("Attempt Number" + attempts);
+            System.out.println("Calculate the value of 3*(7-4)+5");
+            userInput = UserInputScanner.nextInt();
+            if (userInput == CORRECT_ANSWER) {
+                System.out.println("Congratulations! That is correct");
+                attempts = 1;
+                break;
+
+            } else {
+                attempts = attempts + 1;
+                if (userInput != CORRECT_ANSWER) {
+                    System.out.println("Sorry! That is incorrect. Please try again!");
+
+                }//close else
+            }//close if/else 
+        }//close while()
+
+        if (attempts == 3) {
+            System.out.println("Attempt Number" + attempts);
+            System.out.println("Calculate the value of 3*(7-4)+5");
+            userInput = UserInputScanner.nextInt();
+            if (userInput == CORRECT_ANSWER) {
+                System.out.println("Congratulations! That is correct");
+                attempts = 1;
+            } else {
+                System.out.println("Sorry.The Correct Answer was 14!");
+            }//closses else 
+            attempts = 1;
+        }
+    }//close main
+}//close class
