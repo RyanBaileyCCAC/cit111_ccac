@@ -198,7 +198,7 @@ public static void main(String[] args) {
         System.out.println("Hope You Enjoy My Recommendations!");{
             
         }// close if 
-    }// close keepvisiting             
+    }// close              
 }//close class 
 
 
