@@ -1,0 +1,36 @@
+public class Artist {
+
+    public String name;
+    public String genreType;
+    public String numberofAlbums;
+    public String favoriteAlbum;
+    public String favoriteSong; 
+    public String leastfavoriteAlbum; 
+    
+    
+    public String name(){ 
+        return name; 
+    } 
+    
+    public String genreType(){ 
+        return genreType; 
+    }
+    
+    public String numberofAlbums(){ 
+        return numberofAlbums; 
+    }
+    
+    public String favoriteAlbum(){ 
+        return favoriteAlbum; 
+    }
+    
+    public String favoriteSong(){ 
+    return favoriteSong; 
+    }
+    
+    public String leastfavoriteAlbum(){ 
+    return leastfavoriteAlbum; 
+    }
+
+}//Close method
+
