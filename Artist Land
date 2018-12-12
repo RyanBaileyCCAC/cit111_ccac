@@ -1,0 +1,204 @@
+import java.util.Scanner;
+import sun.audio.*;
+
+/**
+ *
+ * @author ryanbailey
+ */
+
+public class ArtistLand {
+    
+static Scanner keyboardScanner = new Scanner(System.in);
+public static boolean mainLoop = true;
+
+public static void main(String[] args) {
+         
+        int menu;
+        System.out.println("Welcome To Ryan's Music Recomendations.");
+        while (mainLoop){
+
+            System.out.println("What Artist Would You Like to Learn More About?");
+            System.out.println("1: The National");
+            System.out.println("2: Beach House");
+            System.out.println("3: Brand New");
+            System.out.println("4: Arcade Fire"); 
+            System.out.println("5: The War On Drugs");
+            System.out.println("6: Grimes");
+            System.out.println("7: Random Playlist");
+            System.out.println("8: Exit"); 
+
+            menu = keyboardScanner.nextInt();
+
+            switch (menu) {
+
+                case 1:
+                    firstArtist();
+                    break;
+                case 2:
+                    secondArtist();
+                    break;  
+                case 3:
+                    thirdArtist();
+                case 4:
+                    fourthArtist(); 
+                case 5:
+                    fifthArtist(); 
+                case 6:
+                    sixthArtist(); 
+                case 7: 
+                    playlist(); 
+                case 8:
+                    exit();
+                    System.out.println("Exit?");
+                    break;
+            }
+        }  
+    }
+
+        public static void firstArtist(){
+        
+        System.out.println("Here's Some Information on the National");     
+            
+        Artist firstArtist; 
+        firstArtist = new Artist(); 
+        firstArtist.name = "The National"; 
+        firstArtist.genreType = "Rock"; 
+        firstArtist.numberofAlbums = "Seven"; 
+        firstArtist.favoriteAlbum = "Trouble Will Find Me"; 
+        firstArtist.leastfavoriteAlbum = "Self-Titled, The National"; 
+        firstArtist.favoriteSong = "Don't Swallow The Cap"; 
+        
+        System.out.println("Artist Name: " + firstArtist.name); 
+        System.out.println("Genre: " + firstArtist.genreType);
+        System.out.println("Number of Albums: " + firstArtist.numberofAlbums);
+        System.out.println("Favorite Album: " + firstArtist.favoriteAlbum);
+        System.out.println("Least Favorite Album: " + firstArtist.leastfavoriteAlbum); 
+        System.out.println("Favorite Song: " + firstArtist.favoriteSong);
+        
+        }//close first artist
+        
+        public static void secondArtist(){ 
+            
+        Artist secondArtist; 
+        secondArtist = new Artist(); 
+        secondArtist.name = "Beach House"; 
+        secondArtist.genreType = "Dream Pop";
+        secondArtist.numberofAlbums = "7"; 
+        secondArtist.favoriteAlbum = "Bloom"; 
+        secondArtist.leastfavoriteAlbum = "Depression Cherry"; 
+        secondArtist.favoriteSong = "Lazuli"; 
+        
+        System.out.println("Artist Name: " + secondArtist.name); 
+        System.out.println("Genre: " + secondArtist.genreType);
+        System.out.println("Number of Albums: " + secondArtist.numberofAlbums);
+        System.out.println("Favorite Album: " + secondArtist.favoriteAlbum);
+        System.out.println("Least Favorite Album: " + secondArtist.leastfavoriteAlbum); 
+        System.out.println("Favorite Song: " + secondArtist.favoriteSong);
+        
+        }//close second artist 
+        
+        public static void thirdArtist(){ 
+            
+        Artist thirdArtist; 
+        thirdArtist = new Artist(); 
+        thirdArtist.name = "Brand New"; 
+        thirdArtist.genreType = "Pop Punk";
+        thirdArtist.numberofAlbums = "5"; 
+        thirdArtist.favoriteAlbum = "Science Fiction"; 
+        thirdArtist.leastfavoriteAlbum = "Daisy"; 
+        thirdArtist.favoriteSong = "Seventy Times 7"; 
+        
+        System.out.println("Artist Name: " + thirdArtist.name); 
+        System.out.println("Genre: " + thirdArtist.genreType);
+        System.out.println("Number of Albums: " + thirdArtist.numberofAlbums);
+        System.out.println("Favorite Album: " + thirdArtist.favoriteAlbum);
+        System.out.println("Least Favorite Album: " + thirdArtist.leastfavoriteAlbum); 
+        System.out.println("Favorite Song: " + thirdArtist.favoriteSong);
+       
+        }//close third artist 
+        
+        public static void fourthArtist(){ 
+            
+        Artist fourthArtist; 
+        fourthArtist = new Artist(); 
+        fourthArtist.name = "Arcade Fire"; 
+        fourthArtist.genreType = "Rock";
+        fourthArtist.numberofAlbums = "5"; 
+        fourthArtist.favoriteAlbum = "The Suburbs"; 
+        fourthArtist.leastfavoriteAlbum = "Everything Now"; 
+        fourthArtist.favoriteSong = "Sprawl 2 (Mountains Beyond Mountains"; 
+        
+        System.out.println("Artist Name: " + fourthArtist.name); 
+        System.out.println("Genre: " + fourthArtist.genreType);
+        System.out.println("Number of Albums: " + fourthArtist.numberofAlbums);
+        System.out.println("Favorite Album: " + fourthArtist.favoriteAlbum);
+        System.out.println("Least Favorite Album: " + fourthArtist.leastfavoriteAlbum); 
+        System.out.println("Favorite Song: " + fourthArtist.favoriteSong);
+       
+        }//close fourth artist 
+        
+        public static void fifthArtist(){ 
+            
+        Artist fifthArtist; 
+        fifthArtist = new Artist(); 
+        fifthArtist.name = "The War on Drugs"; 
+        fifthArtist.genreType = "Folk Rock";
+        fifthArtist.numberofAlbums = "4"; 
+        fifthArtist.favoriteAlbum = "Lost in the Dream"; 
+        fifthArtist.leastfavoriteAlbum = "They Don't Have A Bad Album!"; 
+        fifthArtist.favoriteSong = "An Ocean In Between the Waves"; 
+        
+        System.out.println("Artist Name: " + fifthArtist.name); 
+        System.out.println("Genre: " + fifthArtist.genreType);
+        System.out.println("Number of Albums: " + fifthArtist.numberofAlbums);
+        System.out.println("Favorite Album: " + fifthArtist.favoriteAlbum);
+        System.out.println("Least Favorite Album: " + fifthArtist.leastfavoriteAlbum); 
+        System.out.println("Favorite Song: " + fifthArtist.favoriteSong);
+       
+        }//close fifth artist 
+        
+        public static void sixthArtist(){ 
+            
+        Artist sixthArtist; 
+        sixthArtist = new Artist(); 
+        sixthArtist.name = "Grimes"; 
+        sixthArtist.genreType = "Pop";
+        sixthArtist.numberofAlbums = "4"; 
+        sixthArtist.favoriteAlbum = "Art Angels"; 
+        sixthArtist.leastfavoriteAlbum = "Halafaxa"; 
+        sixthArtist.favoriteSong = "Pin"; 
+        
+        System.out.println("Artist Name: " + sixthArtist.name); 
+        System.out.println("Genre: " + sixthArtist.genreType);
+        System.out.println("Number of Albums: " + sixthArtist.numberofAlbums);
+        System.out.println("Favorite Album: " + sixthArtist.favoriteAlbum);
+        System.out.println("Least Favorite Album: " + sixthArtist.leastfavoriteAlbum); 
+        System.out.println("Favorite Song: " + sixthArtist.favoriteSong);
+       
+        }//close sixth artist 
+        
+        private static void printDivider() {
+        System.out.println("*********************************************");
+        }
+        
+        public static void playlist(){ 
+        
+        System.out.println("Robyn...Honey"); 
+        System.out.println("Ghost...Dance Macabre"); 
+        System.out.println("The Dirty Projectors...That's a Lifestyle"); 
+        System.out.println("Jamie XX...Gosh"); 
+        System.out.println("LCD Soundsystem...Call The Police"); 
+        System.out.println("Sofi Tukker...Benadryl"); 
+        System.out.println("The Decemberists...Your Ghost"); 
+        System.out.println("Deafheaven...You Without End");
+            
+        }//close playlist 
+            
+        public static void exit() {
+        System.out.println("Hope You Enjoy My Recommendations!");{
+            
+        }// close if 
+    }// close keepvisiting             
+}//close class 
+
+
